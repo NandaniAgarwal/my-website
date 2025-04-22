@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>I'm Sorry Behen 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: linear-gradient(135deg, #d975ac 0%, #fda085 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      color: #fff;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    h1 {
+      font-family: 'Pacifico', cursive;
+      font-size: 4em;
+      margin-bottom: 0.5em;
+      color: #f4f0f0;
+      text-shadow: 3px 3px 10px rgba(236, 152, 152, 0.3);
+    }
+
+    p {
+      max-width: 600px;
+      font-size: 1.2em;
+      margin: 0 1em 1.5em;
+      color: #fff;
+    }
+
+    .btn {
+      padding: 12px 30px;
+      background-color: #ff6384;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.4em;
+      cursor: pointer;
+      margin: 10px;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #f56b72;
+    }
+
+    .petal {
+      position: absolute;
+      top: -50px;
+      width: 25px;
+      height: 25px;
+      background-image: url('https://cdn-icons-png.flaticon.com/512/415/415733.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      opacity: 0.9;
+      pointer-events: none;
+      z-index: 9999;
+      animation: fall linear infinite;
+    }
+
+    @keyframes fall {
+      0% {
+        transform: translateY(0) rotate(0deg);
+      }
+      100% {
+        transform: translateY(100vh) rotate(360deg);
+      }
+    }
+
+    .heartbreak {
+      font-size: 2.5em;
+      color: #ff4d4d;
+      animation: shake 0.5s infinite alternate;
+      text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.3);
+    }
+
+    @keyframes shake {
+      from {
+        transform: rotate(-5deg);
+      }
+      to {
+        transform: rotate(5deg);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="page1">
+    <h1>Sorry Behen! 💖</h1>
+    <p>
+      Mujhe pata hai main kabhi kabhi tujhe hurt kar deti hoon...<br/>
+      Par main waise hi tujhe bahut pyaar karti hoon.<br/>
+      Teri dosti mere liye sab kuch hai.<br/>
+      To chal na, gussa chhodo, sab kuch theek ho jayega! 💕
+    </p>
+    <button class="btn" onclick="showPage(2)">Mujhe Maaf Kregi?(Pls krde na) 😢</button>
+  </div>
+
+  <div id="page2" style="display:none;">
+    <h1>Kya Tum Mujhe Maaf Karo Gi? 😞</h1>
+    <button class="btn" onclick="showPage(3)">Haan, Theek Hai 😊</button>
+    <button class="btn" onclick="showPage(4)">Bilkul Nahi 😭</button>
+  </div>
+
+  <div id="page3" style="display:none;">
+    <h1>Thank You! I Love You! ❤️</h1>
+    <p>
+      Tum meri duniya ho, aur ab mujhe lagta hai sab kuch thik hai.<br/>
+      Ab main tumhare saath hoon, har baat mein! 🤗<br/>
+      Joke suna? "Me: Tu meri life ka Wi-Fi hai!<br/>
+      Her: Awwww<br/>
+      Me: Kyunki jab tu paas hoti hai tabhi sab kuch connect hota hai... otherwise signal lost 😭😂!" 😜
+    </p>
+    <button class="btn" onclick="showPage(5)">Chal, treat toh banta hai! 🍦</button>
+  </div>
+
+  <div id="page4" style="display:none;">
+    <h1 class="heartbreak">Yaar Itna Gussa Kyun (Pls maanja na)? 💔</h1>
+    <p>
+      Dekh, tum meri duniya ho. Maan jao, please. 😔<br/>
+      Tum bina sab kuch adhoora lagta hai. Mujhe tumse pyaar hai, ab baat karlo! 🥺🙏
+    </p>
+    <button class="btn" onclick="showPage(3)">Chal Ok, Maaf Kiya ❤️</button>
+    <button class="btn" onclick="showPage(6)">Abhi Bhi Nahi 😭</button>
+  </div>
+
+  <div id="page5" style="display:none;">
+    <h1>Thank You for Forgiving Me! 😘</h1>
+    <p>
+      Tumse maafii mil gayi... ab treat toh banta hai na🍦?!<br/>
+      Isi baat pe ek last joke😂😂<br/>
+      Me: Tu meri battery hai.<br/>
+Her: Matlab?<br/>
+Me: Tu hi toh hai jo mujhe charge karti hai, gussa karke bhi... full power se 🔋💥
+    </p>
+    <button class="btn">Enjoyyyyyyyyy! 🍦</button>
+  </div>
+
+  <div id="page6" style="display:none;">
+    <h1 class="heartbreak">Yaar Itna Gussa Kyun (Pls maanja na)? 💔</h1>
+    <p>
+      Dekh, teri pasand ki ice cream khilaongi, maaf kar de please 😩🍦<br/>
+      Itna bhi mat sata re, tu nahi maaf karegi toh kaun karega? 😖
+    </p>
+    <button class="btn" onclick="showPage(3)">Chal ro mat, maaf kiya 😅</button>
+    <button class="btn" onclick="showPage(3)">I maaf you 😂❤️</button>
+  </div>
+
+  <script>
+    function showPage(pageNumber) {
+      // Hide all pages
+      for (let i = 1; i <= 6; i++) {
+        document.getElementById('page' + i).style.display = 'none';
+      }
+
+      // Show selected page
+      const currentPage = document.getElementById('page' + pageNumber);
+      currentPage.style.display = 'block';
+
+      // Remove previous petals
+      document.querySelectorAll('.petal').forEach(el => el.remove());
+
+      // Add petals on forgiveness page (page 3)
+      if (pageNumber === 3) {
+        for (let i = 0; i < 30; i++) {
+          const petal = document.createElement('div');
+          petal.className = 'petal';
+          petal.style.left = Math.random() * 100 + 'vw';
+          petal.style.animationDuration = (3 + Math.random() * 2) + 's';
+          petal.style.animationDelay = Math.random() + 's';
+          document.body.appendChild(petal);
+        }
+      }
+    }
+  </script>
+
+</body>
+</html>
